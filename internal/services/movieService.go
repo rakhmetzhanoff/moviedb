@@ -10,7 +10,7 @@ type MovieRepository interface {
 	Create(movie *models.Movie) error
 	Update(id int, movie *models.Movie) error
 	Delete(movieID int) error
-	CreateDirector(director *models.Director) error // Добавляем этот метод
+	CreateDirector(director *models.Director) error
 }
 
 type MovieService struct {
