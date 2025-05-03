@@ -38,7 +38,7 @@ func Register(c *gin.Context) {
 	var req struct {
 		Username string `json:"username"`
 		Password string `json:"password"`
-		Role     string `json:"role"` // можно опустить, по умолчанию "user"
+		Role     string `json:"role"`
 	}
 
 	if err := c.ShouldBindJSON(&req); err != nil || req.Username == "" || req.Password == "" {
